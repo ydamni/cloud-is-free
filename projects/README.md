@@ -24,7 +24,7 @@ All the information about the project is available on its page.
 
 ## Start a project
 
-## [Project 1 - Static Website Hosting](project-1/README.md)
+## [Project 1 - Static Website Hosting](projects/project-1/README.md)
 
 **Objective:** Host a static website using AWS
 
@@ -37,7 +37,7 @@ All the information about the project is available on its page.
 **Free-only route:** Yes
 
 
-[Start the project](project-1/README.md)
+[Start the project](projects/project-1/README.md)
 
 ___
 
