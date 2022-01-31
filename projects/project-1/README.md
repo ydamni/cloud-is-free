@@ -1,0 +1,58 @@
+# Project 1 – Static Website Hosting
+
+> Host a static HTTPS website using AWS
+
+## Cloud tools used
+#### AWS
+- S3
+- Route 53
+- Certificate Manager
+- CloudFront
+
+## Conditions of the Free Tier
+-	*S3:*
+    -	5 GB of free storage
+    -	20,000 free GET requests & 2,000 free PUT requests
+-	*CloudFront:*
+    -	50 GB of free outbound data transfer
+    -	2,000,000 free HTTP or HTTPS requests
+-	*Route 53:*
+    -   Free DNS queries for A records
+-	*AWS Certificate Manager:*
+    -	Free SSL/TLS certificate to create, and to use with CloudFront
+
+## Costs
+#### Monthly
+- Hosting a hosted zone : $0.50
+
+#### Annual
+- Purchase of a domain name: about $12 for a .com domain
+
+#### TOTAL
+- $12.50 the first month, then $0.50 every month = **$18.00 for a year**
+
+#### Free-only route
+The project is partially feasible without paying, but you won't be able to :
+- Get a domain name
+- Use Route 53 to create a hosted zone
+- Use Certificate Manager to generate a SSL Certificate
+- Use Cloudfront to make use of edge locations and deploy your website in HTTPS
+___
+
+## Table of contents
+
+[1. What the project is about](/projects/project-1/part-1.md)
+
+[2. Use a domain name](/projects/project-1/part-2.md)
+
+[3. Create a hosted zone](/projects/project-1/part-3.md)
+
+[4. Create and configure S3 Buckets](/projects/project-1/part-4.md)
+
+[5. Link the domain to S3 Buckets with Route 53](/projects/project-1/part-5.md)
+
+[6. Create a SSL certificate with AWS Certificate Manager](/projects/project-1/part-6.md)
+
+[7. Create and configure CloudFront distributions](/projects/project-1/part-7.md)
+
+[8. And the bill ?](/projects/project-1/part-8.md)
