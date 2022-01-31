@@ -41,18 +41,18 @@ ___
 
 ## Table of contents
 
-[1. What the project is about](/projects/project-1/part-1.md)
+[1. What the project is about](/projects/project-1/part-1/README.md)
 
-[2. Use a domain name](/projects/project-1/part-2.md)
+[2. Use a domain name](/projects/project-1/part-2/README.md)
 
-[3. Create a hosted zone](/projects/project-1/part-3.md)
+[3. Create a hosted zone](/projects/project-1/part-3/README.md)
 
-[4. Create and configure S3 Buckets](/projects/project-1/part-4.md)
+[4. Create and configure S3 Buckets](/projects/project-1/part-4/README.md)
 
-[5. Link the domain to S3 Buckets with Route 53](/projects/project-1/part-5.md)
+[5. Link the domain to S3 Buckets with Route 53](/projects/project-1/part-5/README.md)
 
-[6. Create a SSL certificate with AWS Certificate Manager](/projects/project-1/part-6.md)
+[6. Create a SSL certificate with AWS Certificate Manager](/projects/project-1/part-6/README.md)
 
-[7. Create and configure CloudFront distributions](/projects/project-1/part-7.md)
+[7. Create and configure CloudFront distributions](/projects/project-1/part-7/README.md)
 
-[8. And the bill ?](/projects/project-1/part-8.md)
+[8. And the bill ?](/projects/project-1/part-8/README.md)
