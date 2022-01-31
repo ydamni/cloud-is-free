@@ -4,4 +4,4 @@
 
 - Start a project
 
-    - [Projects](/#projects)
+    - [Projects](projects/README.md)
