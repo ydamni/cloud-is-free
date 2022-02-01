@@ -31,12 +31,6 @@
 #### TOTAL
 - $12.50 the first month, then $0.50 every month = **$18.00 for a year**
 
-#### Free-only route
-The project is partially feasible without paying, but you won't be able to :
-- Get a domain name
-- Use Route 53 to create a hosted zone
-- Use Certificate Manager to generate a SSL Certificate
-- Use Cloudfront to make use of edge locations and deploy your website in HTTPS
 ___
 
 ## Table of contents

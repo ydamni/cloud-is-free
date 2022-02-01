@@ -2,11 +2,7 @@
 
 > Start a project at any time.
 
-## Before we start
-
-**You are fully responsible for any invoice on your AWS account.** This documentation is only intended to help you in the realization of practical projects. You are responsible for every action taken on your account.
-
-Below is the list of projects realized with an optimized use of the Free Tier. Some projects use paid tools to be properly implemented. **It's up to you to decide whether or not to pay for the paid tools.** If you are able to pay, I strongly advise you to do so. But if you can't afford it, it is specified through the *Free-only route* field if the project is partially feasible using only the Free Tier.
+Below is the list of projects realized with an optimized use of the Free Tier in order to minimize your expenses.
 
 Please take a close look at the Free Tier service:
 - AWS : https://aws.amazon.com/fr/free/
@@ -18,11 +14,13 @@ You will find a short list of information for each project:
 - *Difficulty;*
 - *Time to complete;*
 - *Budget;*
-- *Free-only route.*
 
 All the information about the project is available on its page.
 
-## Start a project
+#### Before you start
+**You are fully responsible for any invoice on your AWS account.** This documentation is only intended to help you in the realization of practical projects. You are responsible for every action taken on your account.
+
+## List of projects
 
 ## [Project 1 - Static Website Hosting](projects/project-1/README.md)
 
@@ -34,10 +32,7 @@ All the information about the project is available on its page.
 
 **Budget:** Less than $20
 
-**Free-only route:** Yes
-
-
-[Start the project](projects/project-1/README.md)
+#### [Start the project 1](projects/project-1/README.md)
 
 ___
 
