@@ -55,4 +55,4 @@ ___
 
 [7. Create and configure CloudFront distributions](/projects/project-1/part-7/README.md)
 
-[8. And the bill ?](/projects/project-1/part-8/README.md)
+[8. And the bill?](/projects/project-1/part-8/README.md)
