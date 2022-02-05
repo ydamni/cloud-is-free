@@ -32,7 +32,7 @@ All the information about the project is available on its page.
 
 **Budget:** Less than $20
 
-#### [Start the project 1](projects/project-1/README.md)
+#### [Start the project 1](../projects/project-1/README.md)
 
 ___
 
