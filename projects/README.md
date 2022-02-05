@@ -22,7 +22,7 @@ All the information about the project is available on its page.
 
 ## List of projects
 
-## [Project 1 - Static Website Hosting](projects/project-1/README.md)
+## Project 1 - Static Website Hosting
 
 **Objective:** Host a static website using AWS
 
