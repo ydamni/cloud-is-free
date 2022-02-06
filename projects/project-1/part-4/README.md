@@ -4,7 +4,7 @@ To host your static website, you will need to create an S3 Bucket containing the
 
 In this example, the domain name will be *cif-project.com*.
 
-The files that will be installed in the S3 Bucket and that will serve as pages for the website, are downloadable on GitHub to this link: [Github link]()
+The files that will be installed in the S3 Bucket and that will serve as pages for the website, are downloadable on GitHub to this link: [Github link](https://github.com/ydamni/cloud-is-free/tree/main/projects/project-1/resources)
 
 ##### Now, let’s start.
 
