@@ -5,7 +5,7 @@
 Below is the list of projects realized with an optimized use of the Free Tier in order to minimize your expenses.
 
 Please take a close look at the Free Tier service:
-- AWS : https://aws.amazon.com/fr/free/
+- AWS : https://aws.amazon.com/free/
 
 These projects have been done beforehand to verify their cost. The budget specified for each project is the one found after one month of use. Billing is detailed in the last part of each project.
 
