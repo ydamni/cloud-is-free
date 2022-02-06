@@ -5,7 +5,7 @@ For the more hesitant who do not want to follow this tutorial blindly and wish t
 So I'm showing you, in my use case, my AWS bill over a week and a month of going live.
 But before, let's look at this:
 
-![How many requests](images/how-many-requests.png)
+![How many requests](images/how-many-requests.png ':size=800')
 
 Here is a sample of my bill, we are interested in the number of requests here, and I have a question for you:
 ##### What value are you reading?
@@ -21,7 +21,7 @@ A little general knowledge doesn't hurt:
 In the world, there are several types of notations to separate the integer part from the decimal part: the dot, the comma and the momayyez (also called the Arabic decimal separator).
 The graph below shows the decimal separator according to the country:
 
-![Decimal Separator](images/decimal-separator.png)
+![Decimal Separator](images/decimal-separator.png ':size=350')
 
 Link: https://en.wikipedia.org/wiki/Decimal_separator
 
@@ -48,7 +48,7 @@ You can finally analyze the evolution of a bill from this project over a week an
 #### S3:
 S3 Buckets are created in us-east-1, so we refer to the billing for that region only.
 
-![S3 week](images/s3-week.png)
+![S3 week](images/s3-week.png ':size=800')
 
 **What is observed:**
 - Requests (Free Tier: 2,000 PUT & 20,000 GET):
@@ -60,7 +60,7 @@ S3 Buckets are created in us-east-1, so we refer to the billing for that region 
 #### CloudFront:
 Remember, for the *cif-project.com* website, the Price Class 100 was chosen; therefore, invoices will be generated only for North America and Europe.
 
-![cloudfront US week](images/cloudfront-us-week.png)
+![cloudfront US week](images/cloudfront-us-week.png ':size=800')
 
 **What is observed:**
 - Requests (Free Tier: 2,000,000 HTTPS or HTTPS Requests):
@@ -68,7 +68,7 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 - Storage (Free Tier: 50 GB):
     - 0.001 + 0.000001 = 0.001001 GB used = 0.002% of the Free Tier used.
 
-![Cloudfront Europe week](images/cloudfront-europe-week.png)
+![Cloudfront Europe week](images/cloudfront-europe-week.png ':size=800')
 
 **What is observed:**
 - Requests (Free Tier: 2,000,000 HTTPS or HTTPS Requests):
@@ -78,7 +78,7 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 
 #### Route 53:
 
-![Route 53 week](images/route-53-week.png)
+![Route 53 week](images/route-53-week.png ':size=800')
 
 **What is observed:**
 - Queries (not free):
@@ -90,7 +90,7 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 #### AWS Certificate Manager:
 No invoice since the creation of our SSL certificate is totally free.
 
-___
+...
 
 In the end, except for the $0.50 of the hosted zone, we are well on our way to paying nothing: all services have a usage lower than 20% of the Free Tier in one week, so we will never exceed the Free Tier threshold at the end of the month.
 
@@ -103,7 +103,7 @@ But for the more skeptical, let's take a look at one month of the project's prod
 #### S3:
 S3 Buckets are created in us-east-1, so we refer to the billing for that region only.
 
-![S3 month](images/s3-month.png)
+![S3 month](images/s3-month.png ':size=800')
 
 **What is observed:**
 - Requests (Free Tier: 2,000 PUT & 20,000 GET):
@@ -115,7 +115,7 @@ S3 Buckets are created in us-east-1, so we refer to the billing for that region 
 #### CloudFront:
 Remember, for the *cif-project.com* website, the Price Class 100 was chosen; therefore, invoices will be generated only for North America and Europe.
 
-![CloudFront US month](images/cloudfront-us-month.png)
+![CloudFront US month](images/cloudfront-us-month.png ':size=800')
 
 **What is observed:**
 - Requests (Free Tier: 2,000,000 HTTPS or HTTPS Requests):
@@ -123,7 +123,7 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 - Storage (Free Tier: 50 GB):
     - 0.001 + 0.000001 = 0.001001 GB used = 0.002% of the Free Tier used.
 
-![CloudFront Europe month](images/cloudfront-europe-month.png)
+![CloudFront Europe month](images/cloudfront-europe-month.png ':size=800')
 
 **What is observed:**
 - Requests (Free Tier: 2,000,000 HTTPS or HTTPS Requests):
@@ -133,7 +133,7 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 
 #### Route 53:
 
-![Route 53 month](images/route-53-month.png)
+![Route 53 month](images/route-53-month.png ':size=800')
 
 **What is observed:**
 - Queries (not free):
@@ -145,9 +145,9 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 #### AWS Certificate Manager:
 No invoice since the creation of our SSL certificate is totally free.
 
-___
+...
 
-The Free Tier was used at a maximum of 17.97% in fifteen days, we are far below the 50% mark.
+In fifteen days, the Free Tier was used at a maximum of 17.97%. We are far below the 50% mark.
 
 #### In one month, the Free Tier threshold will never be exceeded. We can conclude that the project is clearly feasible with an annual budget of less than $20.
 

@@ -25,11 +25,11 @@ This will decide what the final URL displayed to the user will be.
 
 For example, Amazon has chosen to have the address of its website in www :
 
-![Amazon www](images/amazon-www.png)
+![Amazon www](images/amazon-www.png ':size=250')
 
 While Twitter has decided to have the address of its website in non-www :
 
-![Twitter non-www](images/twitter-non-www.png)
+![Twitter non-www](images/twitter-non-www.png ':size=250')
 
 So, which one should you choose? Well… it doesn't matter, do as you please. Don't waste too much time on this detail, or you'll end up in the [Bike Shed Effect!](https://bikeshed.com/)
 
@@ -40,27 +40,27 @@ For this example, the website will have the non-www name as main address: *cif-p
 
 To begin with, create the main S3 Bucket which must have the same name as the website you are hosting:
 
-![General configuration Main](images/general-configuration-main.png)
+![General configuration Main](images/general-configuration-main.png ':size=700')
 
 Then allow this Bucket to be publicly available on the Internet:
 
-![Public Access Settings Bucket](images/public-access-settings-bucket.png)
+![Public Access Settings Bucket](images/public-access-settings-bucket.png ':size=800')
 
 The main Bucket is now created, it is time to install the files of your website. To do this, go to your Bucket and click on **Upload**:
 
-![Upload Objects](images/upload-objects.png)
+![Upload Objects](images/upload-objects.png ':size=1200')
 
 Add previously downloaded *index.html* and *error.html* files:
 
-![How to Upload](images/how-to-upload.png)
+![How to Upload](images/how-to-upload.png ':size=1300')
 
 The files are now objects in the main S3 Bucket:
 
-![Files and Folders](images/files-and-folders.png)
+![Files and Folders](images/files-and-folders.png ':size=750')
 
 Move to **Permissions** to modify the Bucket Policy:
 
-![Edit Bucket policy](images/edit-bucket-policy.png)
+![Edit Bucket policy](images/edit-bucket-policy.png ':size=1000')
 
 Insert the following policy and modify it slightly before validating:
 
@@ -91,27 +91,27 @@ This Bucket policy allows:
 
 In this example, the Bucket policy now looks like this:
 
-![Bucket policy added](images/bucket-policy-added.png)
+![Bucket policy added](images/bucket-policy-added.png ':size=1350')
 
 All that remains is to apply the new Bucket policy; the pages of the website will now be publicly accessible. It should be displayed *publicly accessible* below the name of the S3 Bucket:
 
-![Publicly Available](images/publicly-available.png)
+![Publicly Available](images/publicly-available.png ':size=200')
 
 Last step: activate static web hosting by going to the **Static website hosting section**, at the bottom of the **Properties tab**:
 
-![Static Web Hosting disabled](images/static-web-hosting-disabled.png)
+![Static Web Hosting disabled](images/static-web-hosting-disabled.png ':size=1100')
 
 Start by activating and hosting your static website, and indicate the name of your index (*index.html*) and error (*error.html*) documents:
 
-![Edit Static Web hosting main](images/edit-static-web-hosting-main.png)
+![Edit Static Web hosting main](images/edit-static-web-hosting-main.png ':size=700')
 
 After saving changes, all you need to do is check that the site is accessible from a public address. Go back to the **Static website hosting section** to get the temporary URL of the S3 Bucket:
 
-![Copy URL main Bucket](images/copy-url-main-bucket.png)
+![Copy URL main Bucket](images/copy-url-main-bucket.png ':size=1400')
 
-Now let’s see what the S3 Bucket displays:
+Now let's see what the S3 Bucket displays:
 
-![Nice Job main Bucket](images/nice-job-main-bucket.png)
+![Nice Job main Bucket](images/nice-job-main-bucket.png ':size=600')
 
 Perfect! You have access to your main page of the website (*index.html*), the website is in public access on the internet.
 
@@ -121,23 +121,23 @@ Mission accomplished for the main S3 Bucket, now it's time for the redirect S3 B
 
 First, create the redirect S3 Bucket that will redirect all the traffic it receives to the main S3 Bucket:
 
-![General Configuration redirect](images/general-configuration-redirect.png)
+![General Configuration redirect](images/general-configuration-redirect.png ':size=700')
 
 Then, go to the **Bucket configuration** > **Properties tab** > **Static website hosting section**:
 
-![Static Web Hosting disabled](images/static-web-hosting-disabled.png)
+![Static Web Hosting disabled](images/static-web-hosting-disabled.png ':size=1100')
 
 Activate the static website hosting, but this time by redirecting the requests. Specify the target Bucket (in this example *cif-project.com*), and leave the **Protocol field** as it is for the moment (*none*):
 
-![Edit Static Web Hosting redirect](images/edit-static-web-hosting-redirect.png)
+![Edit Static Web Hosting redirect](images/edit-static-web-hosting-redirect.png ':size=700')
 
 Get the URL of your redirect S3 Bucket:
 
-![Copy URL redirect Bucket](images/copy-url-redirect-bucket.png)
+![Copy URL redirect Bucket](images/copy-url-redirect-bucket.png ':size=1200')
 
 Time to see the result:
 
-![Site can't be reached](images/site-cant-be-reached.png)
+![Site can't be reached](images/site-cant-be-reached.png ':size=1000')
 
 There is good news and bad news:
 - The good news is that the redirection is done: you are redirected to your website (in this example *cif-project.com*);

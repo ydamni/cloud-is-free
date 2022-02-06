@@ -9,29 +9,29 @@ You will create a CloudFront distribution for each of your S3 Bucket, two in tot
 
 Before creating your main CloudFront distribution, go to the main S3 Bucket, and copy the Bucket URL into **Properties tab**, **static website hosting section**:
 
-![Copy URL main](images/copy-url-main.png)
+![Copy URL main](images/copy-url-main.png ':size=1200')
 
 Now, create your CloudFront distribution:
 
-![Create distribution](images/create-distribution.png)
+![Create distribution](images/create-distribution.png ':size=1100')
 
 Have a first look at the **Origin section**.
 When you click on the **Origin domain field**, a drop-down panel appears, where you can select links to the S3 Buckets:
 
-![Origin domain list](images/origin-domain-list.png)
+![Origin domain list](images/origin-domain-list.png ':size=600')
 
 :warning: `Do NOT select them! Strange as it may seem, those are incorrectly filled in (there is a syntax error); instead, paste the Bucket URL you previously copied.`
 
 Disable the **Origin Shield** to avoid additional charges. This is what the **Origin section** configuration should look like:
 
-![Origin section](images/origin-section.png)
+![Origin section](images/origin-section.png ':size=700')
 
 Let's move to the **Default cache behavior section**.
 The only field to modify here is the **Viewer protocol policy**, where you choose to *Redirect HTTP to HTTPS*. All the traffic received in HTTP on port 80 will be redirected to HTTPS on port 443, so all connections made on both ports will be secure.
 
 The **Default cache behavior section** should look like this:
 
-![Default cache behavior](images/default-cache-behavior.png)
+![Default cache behavior](images/default-cache-behavior.png ':size=700')
 
 Now let’s focus on the **Settings section**, and put some attention to **Price Classes**.
 
@@ -41,19 +41,19 @@ Now let’s focus on the **Settings section**, and put some attention to **Price
 
 In this example, since the use case is only for Europe and North America, the choice made is **Price Class 100**:
 
-![Price Class](images/price-class.png)
+![Price Class](images/price-class.png ':size=500')
 
 Fill in an **Alternate domain name (CNAME)** by inserting your main domain name:
 
-![Alternate domain name main](images/alternate-domain-name-main.png)
+![Alternate domain name main](images/alternate-domain-name-main.png ':size=600')
 
 In the **custom SSL certificate field**, select the newly created certificate:
 
-![Custom SSL certificate](images/custom-ssl-certificate.png)
+![Custom SSL certificate](images/custom-ssl-certificate.png ':size=700')
 
 Leave the **Legacy clients support** *unselected* to avoid a nice bill of $600 at the end of the month:
 
-![Legacy clients support](images/legacy-clients-support.png)
+![Legacy clients support](images/legacy-clients-support.png ':size=700')
 
 Once all the necessary information are filled, you can now validate the creation of your main CloudFront distribution, and move on to creating the redirect CloudFront distribution.
 
@@ -61,16 +61,16 @@ Once all the necessary information are filled, you can now validate the creation
 
 As you did earlier, before creating your redirect CloudFront distribution, go to the redirect S3 Bucket, and copy the Bucket URL into **Properties tab**, **static website hosting section**:
 
-![Copy URL redirect](images/copy-url-redirect.png)
+![Copy URL redirect](images/copy-url-redirect.png ':size=700')
 
 Now create your second CloudFront distribution. The configuration of the redirect CloudFront distribution will be almost the same, except for two details:
 - The **Origin domain** will be the URL of the redirect S3 Bucket:
 
-![Origin domain redirect](images/origin-domain-redirect.png)
+![Origin domain redirect](images/origin-domain-redirect.png ':size=600')
 
 - The **Alternate domain name (CNAME)** will be the redirect domain:
 
-![Alternate domain name redirect](images/alternate-domain-name-redirect.png)
+![Alternate domain name redirect](images/alternate-domain-name-redirect.png ':size=600')
 
 Once the configuration of your redirect distribution is complete, you can validate its creation.
 
@@ -78,21 +78,21 @@ You now have two CloudFront distributions. Wait a few minutes to let the distrib
 
 In the meantime, jump to your redirect S3 Bucket, **Properties tab**, **static website hosting section**, not to copy the URL this time but to make one last modification: change the used **protocol** from HTTP to HTTPS:
 
-![Activate HTTPS](images/activate-https.png)
+![Activate HTTPS](images/activate-https.png ':size=800')
 
 Go back to CloudFront, where you copy the web addresses of your CloudFront distributions (**Domain name field**) in the navigator search bar, in order to verify that you can access your site through these web addresses:
 
-![Copy distributions domain name](images/copy-distributions-domain-name.png)
+![Copy distributions domain name](images/copy-distributions-domain-name.png ':size=1400')
 
 
 Start by copying the URL of the main CloudFront distribution:
 
-![Nice job main distribution](images/nice-job-main-distribution.png)
+![Nice job main distribution](images/nice-job-main-distribution.png ':size=700')
 
 The website is accessible, and in HTTPS this time.
 What about the redirect CloudFront distribution:
 
-![Nice job redirect distribution](images/nice-job-redirect-distribution.png)
+![Nice job redirect distribution](images/nice-job-redirect-distribution.png ':size=700')
 
 It works too, your website is now accessible in HTTPS.
 
@@ -100,25 +100,25 @@ It works too, your website is now accessible in HTTPS.
 
 To finalize, head to Route 53 to make changes to the A records, so that the web addresses route traffic to your freshly created Cloudfront distributions:
 
-![Modify A records](images/modify-a-records.png)
+![Modify A records](images/modify-a-records.png ':size=1300')
 
 The record for the main domain name should look like this:
 
-![A record main](images/a-record-main.png)
+![A record main](images/a-record-main.png ':size=350')
 
 And the record for the redirect domain name should look like that:
 
-![A record redirect](images/a-record-redirect.png)
+![A record redirect](images/a-record-redirect.png ':size=350')
 
 Time to make the final tests by accessing the website through HTTP URLs, to verify that the redirection to HTTPS is applied.
 
-Let’s first check out the main domain in HTTP (*http<nolink>://cif-project.com*):
+Let's first check out the main domain in HTTP (*http<nolink>://cif-project.com*):
 
-![Nice job main domain](images/nice-job-main-domain.png)
+![Nice job main domain](images/nice-job-main-domain.png ':size=600')
 
 And now the redirect domain in HTTP (*http<nolink>://www<nolink>.cif-project.com*):
 
-![Nice job redirect domain](images/nice-job-redirect-domain.png)
+![Nice job redirect domain](images/nice-job-redirect-domain.png ':size=600')
 
 #### Congratulations, you now know how to set up a static website in HTTPS on AWS!
 

@@ -2,11 +2,11 @@
 
 To create a SSL certificate for your website, first go to AWS Certificate Manager and **request a certificate**:
 
-![Request certificate](images/request-certificate.png)
+![Request certificate](images/request-certificate.png ':size=250')
 
 The certificate will be used on a public website, so you need to **request a public certificate**:
 
-![Request public certificate](images/request-public-certificate.png)
+![Request public certificate](images/request-public-certificate.png ':size=900')
 
 When applying for an SSL certificate, you are asked to fill in **Fully Qualified Domain Names** (known as FQDN). In your case, you have two FQDNs: the www domain name (e.g. *www<nolink>.cif-project.com*) and the non-www domain name (e.g. *cif-project.com*). Fill them both in this same certificate so that the connections by these two addresses are in HTTPS.
 
@@ -14,27 +14,27 @@ Next, you need to choose a validation method, proving that the domain you are cr
 
 After that, all you have to do is validate the SSL Certificate creation request:
 
-![FQDN & DNS validation](images/fqdn-dns-validation.png)
+![FQDN & DNS validation](images/fqdn-dns-validation.png ':size=900')
 
-The certificate is created, but not yet validated; let’s check its configuration:
+The certificate is created, but not yet validated; let's check its configuration:
 
-![Select certificate](images/select-certificate.png)
+![Select certificate](images/select-certificate.png ':size=1300')
 
 In the configuration of the certificate, you need to add two DNS records of type CNAME in your hosted zone. Lucky you, AWS takes care of this: all you have to do is, first, select **Create records in Route 53**:
 
-![Create records in Route 53](images/create-records-route-53.png)
+![Create records in Route 53](images/create-records-route-53.png ':size=1300')
 
 Then select the two FQDNs and finally **Create records**:
 
-![Auto-creation records](images/auto-creation-records.png)
+![Auto-creation records](images/auto-creation-records.png ':size=900')
 
 All you have to do now is wait a few minutes until you see the **Success status**:
 
-![Records created](images/records-created.png)
+![Records created](images/records-created.png ':size=1300')
 
 It's done, AWS has filled in the CNAME records for you. You can verify it by moving to your hosted zone:
 
-![Hosted zone DNS records](images/hosted-zone-dns-records.png)
+![Hosted zone DNS records](images/hosted-zone-dns-records.png ':size=1100')
 
 Here they are, the two freshly added CNAME records, allowing you to validate the SSL certificate you just created.
 

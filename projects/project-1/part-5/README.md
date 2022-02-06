@@ -2,7 +2,7 @@
 
 First, go to Route 53 and look for the DNS records of your hosted zone:
 
-![Hosted Zone](images/hosted-zone.png)
+![Hosted Zone](images/hosted-zone.png ':size=1000')
 
 Now, let's analyze the situation: if a user tries to access your website through the main and redirect web addresses, he wil have no access: `This site can't be reached`.
 
@@ -15,7 +15,7 @@ To do so, you're going to create new DNS records in your hosted zone, and not ju
 ##### Let's start with the first DNS record
 You want to route traffic from your main web address (in this example *cif-project.com*):
 
-![Create record main](images/create-record-main.png)
+![Create record main](images/create-record-main.png ':size=900')
 
 1.	If your main address is www, then add *www* to the record name. If your main address is non-www, leave the record name as it is;
 
@@ -31,14 +31,14 @@ You want to route traffic from your main web address (in this example *cif-proje
 
 Once the first record is created, wait several minutes before checking if your website is accessible via the main web address:
 
-![Nice job main](images/nice-job-main.png)
+![Nice job main](images/nice-job-main.png ':size=600')
 
 Finally! The website is now accessible through this URL, the first record works perfectly.
 
 ##### The second DNS record is next
 You want to route the traffic of your redirect web address (in this example *www<nolink>.cif-project.com*).
 
-![Create record redirect](images/create-record-redirect.png)
+![Create record redirect](images/create-record-redirect.png ':size=900')
 
 1.	If your redirect address is www, then add www to the record name. If your redirect address is non-www, leave the record name as it is;
 
@@ -54,13 +54,13 @@ You want to route the traffic of your redirect web address (in this example *www
 
 Once the second record is created, wait again for several minutes before checking if your website is accessible via the web redirect address:
 
-![Nice job redirect](images/nice-job-redirect.png)
+![Nice job redirect](images/nice-job-redirect.png ':size=600')
 
 When accessing the redirect web address, you are redirected to the main web address: everything goes as planned...
 
 ...well, almost, in fact you have one more problem to solve. Can't you see where the problem is? It's right there:
 
-![Not secure](images/not-secure.png)
+![Not secure](images/not-secure.png ':size=250')
 
 Ouch, the website is not secure... it's understandable, the domain is brand new; you still haven't generated an SSL certificate, so the website uses HTTP instead of HTTPS.
 

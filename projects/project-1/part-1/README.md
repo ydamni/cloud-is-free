@@ -11,7 +11,7 @@ Along the way, you will learn how to:
 
 Take a closer look at the infrastructure deployed with this project :
 
-![Infrastructure](images/infrastructure.png)
+![Infrastructure](images/infrastructure.png ':size=700')
 
 Let's move straight to the project, and get a domain name to use.
 
