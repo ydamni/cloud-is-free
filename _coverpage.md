@@ -4,5 +4,5 @@
 
 > Learn how to setup Cloud projects... for free!
 
-[GitHub]()
-[Getting Started](#)
+[GitHub](https://github.com/ydamni/cloud-is-free)
+[Getting Started](#homepage)
