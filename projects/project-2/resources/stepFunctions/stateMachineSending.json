@@ -1,0 +1,31 @@
+{
+    "Comment": "State machine for sending SMS & email",
+    "StartAt": "Select Type of Sending",
+    "States": {
+        "Select Type of Sending": {
+            "Type": "Choice",
+            "Choices": [
+                {
+                    "Variable": "$.typeOfSending",
+                    "StringEquals": "email",
+                    "Next": "Email"
+                },
+                {
+                    "Variable": "$.typeOfSending",
+                    "StringEquals": "sms",
+                    "Next": "SMS"
+                }
+            ]
+        },
+        "Email": {
+            "Type" : "Task",
+            "Resource": "<lambda_email.py_arn>",
+            "End": true
+        },
+        "SMS": {
+            "Type" : "Task",
+            "Resource": "<lambda_sms.py_arn>",
+            "End": true
+        }
+    }
+}

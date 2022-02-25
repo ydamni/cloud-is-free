@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 - Cloud Is Free</title>
+    <script src="formToAPI.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Message:</label>
+            <input type="text" name="message">
+            <br><br>
+            <label>Email:</label>
+            <input name="email">
+            <button onClick="formToAPI(event,'email')">Send an Email</button>
+            <br><br>
+            <label>SMS:</label>
+            <input name="sms">
+            <button onClick="formToAPI(event,'sms')">Send a SMS</button>
+        </div>
+    </form>
+</body>
+</html>

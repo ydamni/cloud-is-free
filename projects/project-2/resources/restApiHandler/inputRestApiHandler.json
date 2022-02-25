@@ -1,0 +1,3 @@
+{
+    "body": "{\"typeOfSending\":\"sms\", \"destinationEmail\":\"cif-destination@yopmail.com\", \"phoneNumber\":\"+33678901234\", \"message\":\"Sent from REST API Handler\"}"
+}
