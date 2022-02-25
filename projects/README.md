@@ -46,4 +46,4 @@ ___
 
 **Budget:** $0 (Free Tier only)
 
-#### [Start the project 1](../projects/project-2/README.md)
+#### [Start the project 2](../projects/project-2/README.md)
