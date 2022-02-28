@@ -57,7 +57,7 @@ In order to interact with AWS services in Python, you need to know the Software 
 
 Here, AWS provides its own SDK for python3 named boto3. More details on this link: https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 
-In order to interact with AWS services, you must first import the boto3 libraries inside your code:
+In order to interact with AWS services, you must first import the boto3 library inside your code:
 
 ``` py
 import boto3
@@ -148,7 +148,7 @@ Fill in the return at the end of the function, with the value of your choice (in
 
 the Lambda function should look like this (with your own source email address):
 
-```
+``` py
 import boto3
 
 ses = boto3.client('ses')
