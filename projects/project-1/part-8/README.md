@@ -151,4 +151,4 @@ In one month, the Free Tier was used at a **maximum of 9.43%**.
 
 #### In one month, with light use of the website, the Free Tier threshold will never be exceeded. We can conclude that the project is clearly feasible with an annual budget of less than $20.
 
-### [Go back](../)
+### [Finish the project](../)
