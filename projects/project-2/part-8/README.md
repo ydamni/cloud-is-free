@@ -20,13 +20,21 @@ Here, choose to create a *New API* of type *REST*. Give the API a suitable name 
 
 ![REST API Creation](images/rest-api-creation.png ':size=900')
 
-Once the API is created, click on the **Actions** button and select **Create Method**:
+Once the API is created, click on the **Actions** button and select **Create Resource**:
+
+![Create Resource](images/create-resource.png ':size=200')
+
+Enter the name of the resource (here *sending*) and create the resource:
+
+![Resource Configuration](images/resource-configuration.png ':size=700')
+
+Once the resource created, click on the **Actions** button and select **Create Method**
 
 ![Create Method](images/create-method.png ':size=200')
 
 A field will appear, where the *POST* method should be selected, since the purpose will be to publish the data from the website to the API.
 
-When setting up the POST method, choose *Lambda Function* as the **Integration type**, entering the newly created REST API Handler (*restApiHandler*) in the **Lambda Function** field:
+When setting up the POST method, choose *Lambda Function* as the **Integration type**, entering the newly created REST API Handler (*restApiHandler*) in the **Lambda Function** field, and do NOT forget to **Use Lambda Proxy Integration**:
 
 ![POST Setup](images/post-setup.png ':size=700')
 
@@ -40,7 +48,7 @@ All that remains is to deploy the API, doing **Action** -> **Deploy API**:
 
 ![Deploy API](images/deploy-api.png ':size=200')
 
-Make a *[New Stage]*, and choose the **Stage name** of your choice (*sending* in this example):
+Make a *[New Stage]*, and choose the **Stage name** of your choice (*sendingStage* in this example):
 
 ![Deployment Stage](images/deployment-stage.png ':size=500')
 
