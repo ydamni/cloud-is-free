@@ -98,7 +98,7 @@ But for the more skeptical, let's take a look at one month of the project's prod
 
 ### C.	One month invoice
 
->The following invoice is based on a two week deployment (exactly fifteen days). In the near future, a one month deployment invoice will be published instead of this one. For the time being, in order to simulate a one month invoice, the Free Tier usage should not exceed 50%.
+> This invoice was made for the month of February 2022, one and a half months after the project was completed. During this month the site was hardly used, but remained online all the time. So this is what you get if you leave your site running without much use.
 
 #### S3:
 S3 Buckets are created in us-east-1, so we refer to the billing for that region only.
@@ -107,10 +107,10 @@ S3 Buckets are created in us-east-1, so we refer to the billing for that region 
 
 **What is observed:**
 - Requests (Free Tier: 2,000 PUT & 20,000 GET):
-    - 173 PUT, COPY, POST or LIST requests used = 8.65% of the Free Tier used;
-    - 3,594 GET requests used = 17.97% of the Free Tier used.
+    - 5 PUT, COPY, POST or LIST requests used = 0.25% of the Free Tier used;
+    - 1,886 GET requests used = 9.43% of the Free Tier used.
 - Storage (Free Tier: 5 GB):
-    - 0.000000300 GB used = 0.000006% of the Free Tier used.
+    - 0.000001 GB used = 0.00002% of the Free Tier used.
 
 #### CloudFront:
 Remember, for the *cif-project.com* website, the Price Class 100 was chosen; therefore, invoices will be generated only for North America and Europe.
@@ -119,7 +119,7 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 
 **What is observed:**
 - Requests (Free Tier: 2,000,000 HTTPS or HTTPS Requests):
-    - 5 + 443 + 1,629 = 2,077 requests used = 0.10% of the Free Tier used.
+    - 3 + 327 + 1,033 = 1,363 requests used = 0.07% of the Free Tier used.
 - Storage (Free Tier: 50 GB):
     - 0.001 + 0.000001 = 0.001001 GB used = 0.002% of the Free Tier used.
 
@@ -127,9 +127,9 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 
 **What is observed:**
 - Requests (Free Tier: 2,000,000 HTTPS or HTTPS Requests):
-    - 2 + 407 + 1689 = 2,098 requests used = 0.1049% of the Free Tier used.
+    - 5 + 376 + 1347 = 1,728 requests used = 0.09% of the Free Tier used.
 - Storage (Free Tier: 50 GB):
-    - 0.002 + 0.000001 = 0.002001 GB used = 0.002% of the Free Tier used.
+    - 0.001 + 0.000001 = 0.001001 GB used = 0.002% of the Free Tier used.
 
 #### Route 53:
 
@@ -137,7 +137,7 @@ Remember, for the *cif-project.com* website, the Price Class 100 was chosen; the
 
 **What is observed:**
 - Queries (not free):
-    - 3,761 queries = $0.0015044;
+    - 2,785 queries = $0.001114;
     - Queries to Alias records are free of charge.
 - Hosted Zone (not free):
     - $0.50 per month.
@@ -147,8 +147,8 @@ No invoice since the creation of our SSL certificate is totally free.
 
 ...
 
-In fifteen days, the Free Tier was used at a maximum of 17.97%. We are far below the 50% mark.
+In one month, the Free Tier was used at a **maximum of 9.43%**.
 
-#### In one month, the Free Tier threshold will never be exceeded. We can conclude that the project is clearly feasible with an annual budget of less than $20.
+#### In one month, with light use of the website, the Free Tier threshold will never be exceeded. We can conclude that the project is clearly feasible with an annual budget of less than $20.
 
-### [Go back](../)
+### [Finish the project](../)

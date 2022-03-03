@@ -24,7 +24,7 @@ All the information about the project is available on its page.
 
 ## Project 1 - Static Website Hosting
 
-**Objective:** Host a static website using AWS
+**Objective:** Hosting a static website using AWS
 
 **Difficulty:** Beginner
 
@@ -36,3 +36,14 @@ All the information about the project is available on its page.
 
 ___
 
+## Project 2 - Serverless Sending Application
+
+**Objective:** Sending Email and SMS from a Website using Serverless services
+
+**Difficulty:** Advanced Beginner (Level 2)
+
+**Time to complete:** 5 hours
+
+**Budget:** $0 (Free Tier only)
+
+#### [Start the project 2](../projects/project-2/README.md)

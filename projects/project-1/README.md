@@ -1,6 +1,6 @@
 # Project 1 – Static Website Hosting
 
-> Host a static HTTPS website using AWS
+> Hosting a static HTTPS website using AWS
 
 ## Cloud tools used
 #### AWS
