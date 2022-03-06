@@ -65,13 +65,13 @@ Now you want to send the form data to the *formToApi.js* script, to do this you 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2 - Cloud Is Free</title>
-    <script src="formToAPI.js"></script>
+    <script src="formToApi.js"></script>
 </head>
 ```
 
 The objective now is to send an email when the **Send an Email** button is clicked, and to send a SMS when the **Send a SMS** button is clicked.
 
-In other words: on click, send the data and the **typeOfSending** corresponding to the button clicked to the script. To do this, use the **onClick** attribute, which will launch the *formToAPI.js* script when a button is clicked.
+In other words: on click, send the data and the **typeOfSending** corresponding to the button clicked to the script. To do this, use the **onClick** attribute, which will launch the *formToApi.js* script when a button is clicked.
 
 > To know more about OnClick: https://www.w3schools.com/tags/ev_onclick.asp
 
@@ -86,11 +86,11 @@ This is what it looks like:
             <br><br>
             <label>Email:</label>
             <input name="email">
-            <button onClick="formToAPI(event,'email')">Send an Email</button>
+            <button onClick="formToApi(event,'email')">Send an Email</button>
             <br><br>
             <label>SMS:</label>
             <input name="sms">
-            <button onClick="formToAPI(event,'sms')">Send a SMS</button>
+            <button onClick="formToApi(event,'sms')">Send a SMS</button>
         </div>
     </form>
 </body>
@@ -107,7 +107,7 @@ In the end, the main page should look like this:
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2 - Cloud Is Free</title>
-    <script src="formToAPI.js"></script>
+    <script src="formToApi.js"></script>
 </head>
 <body>
     <form>
@@ -117,11 +117,11 @@ In the end, the main page should look like this:
             <br><br>
             <label>Email:</label>
             <input name="email">
-            <button onClick="formToAPI(event,'email')">Send an Email</button>
+            <button onClick="formToApi(event,'email')">Send an Email</button>
             <br><br>
             <label>SMS:</label>
             <input name="sms">
-            <button onClick="formToAPI(event,'sms')">Send a SMS</button>
+            <button onClick="formToApi(event,'sms')">Send a SMS</button>
         </div>
     </form>
 </body>
@@ -135,7 +135,7 @@ The main page *index.html* is ready, now it's time for the *formToApi.js* script
 First, create a JavaScript file *formToApi.js*, in which the **formToApi()** function will be created:
 
 ``` js
-function formToAPI(event, typeOfSending) {
+function formToApi(event, typeOfSending) {
 ```
 
 The function has **event** and **typeOfSending** as arguments.
@@ -228,7 +228,7 @@ The method **fetch()** has two arguments, the first containing the URL of the AP
 The script *formToApi.js* should now look like this:
 
 ``` js
-function formToAPI(event, typeOfSending) {
+function formToApi(event, typeOfSending) {
 
     event.preventDefault()
 
