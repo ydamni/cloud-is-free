@@ -1,4 +1,4 @@
-function formToAPI(event, typeOfSending) {
+function formToApi(event, typeOfSending) {
 
     event.preventDefault()
 
