@@ -118,7 +118,7 @@ In the first choice, the **StringEquals** field has the value *email*, so if **t
 
 In the second choice, the **StringEquals** field has the value *sms*, so if **typeOfSending** = *sms*, then the chosen state will be the value contained in the **Next** field: the *SMS* state.
 
-The *Type Of Sending* state is now ready, it is time to create the *Email* and *SMS states.
+The *Type Of Sending* state is now ready, it is time to create the *Email* and *SMS* states.
 
 Continue with the second state, *Email* :
 
