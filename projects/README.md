@@ -26,7 +26,7 @@ All the information about the project is available on its page.
 
 **Objective:** Hosting a static website using AWS
 
-**Difficulty:** Beginner
+**Difficulty:** Beginner (Level 1)
 
 **Time to complete:** 2 hours
 
@@ -47,3 +47,17 @@ ___
 **Budget:** $0 (Free Tier only)
 
 #### [Start the project 2](../projects/project-2/README.md)
+
+___
+
+## Project 3 - Database and Containers
+
+**Objective:** Managing and Visualizing a RDS database using ECS containers
+
+**Difficulty:** Advanced Beginner (Level 2)
+
+**Time to complete:** 4 hours
+
+**Budget:** $0 (Free Tier only)
+
+#### [Start the project 3](../projects/project-3/README.md)
