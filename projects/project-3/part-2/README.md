@@ -14,11 +14,11 @@ The first part of the settings should look like this:
 
 ![Create VPC Subnets](images/create-vpc-subnets.png ':size=400')
 
-For the next step, choose **1 Availability Zone**, as only one will be needed to complete the project.
+For the next step, choose **2 Availability Zones**. Only one AZ will be needed to complete the project, but in order to create a RDS Database, it is needed to have at least 2 AZ.
 
-> In companies, it is preferable to have at least two Availability Zones to implement high availability.
+> To know why 2 AZ are required for RDS: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBSubnetGroup.html
 
-Select a **Number of public subnets** to 1, since it will be used to interact with the tools installed in the containers. Do the same for the **Number of private subnets** which will contain only RDS.
+Select a **Number of public subnets** to 2, since it will be used to interact with the tools installed in the containers. Do the same for the **Number of private subnets** which will contain only RDS.
 
 Do not add a **NAT Gateway**, as this will be charged (not respecting the Free Tier), and the containers will communicate with the RDS database via an endpoint (unnecessary NAT Gateway).
 
@@ -34,13 +34,15 @@ All that remains is to create the VPC, and wait for its resources to be generate
 
 ![VPC Resources Creation](images/vpc-resources-creation.png ':size=700')
 
-Last step, go to *Subnets*, in order to edit the subnets settings of the **public subnet** of the newly created VPC:
+Last step, go to *Subnets*, in order to edit the subnets settings of the **public subnets** of the newly created VPC:
 
 ![Edit Public Subnet Settings](images/edit-public-subnet-settings.png ':size=700')
 
 The **auto-assign public IPv4 address** must be enabled at all costs, so that each AWS tool linked to the public subnet automatically gets a public IP:
 
 ![Enable Auto Assign](images/enable-auto-assign.png ':size=700')
+
+Do the same for the other public subnet.
 
 The VPC is ready, it is now possible to create the AWS tools, and the first one created will be RDS.
 
