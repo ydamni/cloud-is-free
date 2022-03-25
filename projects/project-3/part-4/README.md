@@ -83,6 +83,20 @@ The ECS cluster is created and managed by a newly created EC2 instance. Take a l
 
 The new EC2 instance is created, and as can be seen from its name, it is an **ECS instance**, in other words an EC2 instance containing an ECS cluster.
 
-The ECS cluster is now created, it is now possible to create containers containing the *phpMyAdmin* and *Metabase* tools.
+Last thing to do: give the ECS Cluster access to the RDS database, and for that you have to go to the **Security Group of the VPC**, and edit the inbound rules:
+
+![Security Group Inbound Rules](images/security-group-inbound-rules.png ':size=800')
+
+:warning: `Be sure you have selected the newly created VPC and not another VPC!`
+
+Add a new inbound rule that will allow the ECS Cluster to access port 3306 of the devices in the VPC, port 3306 being the port used to communicate with a MySQL database.
+
+To do this, choose the **Type MySQL/Aurora**, and define the **Security Group of the ECS Cluster** as **Source**:
+
+![Database Access](images/database-access.png ':size=800')
+
+Save the rule, and the ECS Cluster can now communicate with the RDS database under MySQL.
+
+The ECS cluster is ready, it is now possible to create containers containing the *phpMyAdmin* and *Metabase* tools.
 
 ### [Task Definition for phpMyAdmin DBMS container](/projects/project-3/part-5/README.md)
