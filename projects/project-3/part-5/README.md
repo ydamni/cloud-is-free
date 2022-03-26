@@ -118,4 +118,4 @@ You are now in front of the PhpMyAdmin connection page. Log in using the login d
 
 And now you have the possibility to manipulate the RDS database with phpMyAdmin installed inside a container. Now let's do the same with Metabase.
 
-### [Task Definition for Metabase visualization tool container](/projects/project-3/part-5/README.md)
+### [Task Definition for Metabase visualization tool container](/projects/project-3/part-6/README.md)
