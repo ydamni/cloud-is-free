@@ -44,7 +44,7 @@ ___
 
 **Time to complete:** 5 hours
 
-**Budget:** $0 (Free Tier only)
+**Budget:** Less than $1
 
 #### [Start the project 2](../projects/project-2/README.md)
 
