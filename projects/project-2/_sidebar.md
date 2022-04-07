@@ -18,3 +18,7 @@
             - [9. Code a website and upload it to S3](/projects/project-2/part-9/README)
             - [10. And the bill?](/projects/project-2/part-10/README)
         - [Project 3 - Database and Containers](/projects/project-3/README)
+
+- More
+
+    - [Contact](contact.md)

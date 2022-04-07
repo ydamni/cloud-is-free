@@ -16,3 +16,7 @@
             - [8. And the bill?](/projects/project-1/part-8/README)
         - [Project 2 - Serverless Sending Application](/projects/project-2/README)
         - [Project 3 - Database and Containers](/projects/project-3/README)
+
+- More
+
+    - [Contact](contact.md)
