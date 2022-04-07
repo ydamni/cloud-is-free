@@ -19,7 +19,7 @@ For the **Credentials**, fill in the username and password of your choice, for t
 ![Database Settings](images/database-settings.png ':size=600')
 
 No need to do anything for the **DB instance class**, the Free Tier Template has selected the right instance for you.
-On the other hand for storage, I advise you to deactivate the **storage autoscaling** since the maximum space offered with the Free Tier for RDS is 20GiB, so you should avoid going beyond the 20GiB already allocated:
+On the other hand for storage, I advise you to disable the **storage autoscaling** since the maximum space offered with the Free Tier for RDS is 20GiB, so you should avoid going beyond the 20GiB already allocated:
 
 ![Instance Class Storage](images/instance-class-storage.png ':size=600')
 
@@ -39,7 +39,7 @@ For **Database authentication**, leave the authentication by password, in order 
 
 ![Database Authentication](images/database-authentication.png ':size=600')
 
-Expand the **Additional configuration** window, and only the **Backup** part will have to be modified, since I advise you to deactivate the **automated backup**.
+Expand the **Additional configuration** window, and only the **Backup** part will have to be modified, since I advise you to disable the **automated backup**.
 
 > The Free Tier offers 20GiB of storage dedicated to RDS backup; this backup space will be used up very quickly after a few weeks. And it is not crucial to back up this database since the stored data is not important at all.
 

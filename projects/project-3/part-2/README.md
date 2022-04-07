@@ -24,7 +24,7 @@ Do not add a **NAT Gateway**, as this will be charged (not respecting the Free T
 
 Do not add an **S3 Gateway** since the S3 service will not be used here.
 
-Enable **DNS hostnames** and **DNS resolution**. an **ESSENTIAL step** for the services to interact with each other (especially EFS).
+Enable **DNS hostnames** and **DNS resolution**, an **ESSENTIAL step** for the services to interact with each other (especially EFS).
 
 The second part of the settings should look like this:
 
