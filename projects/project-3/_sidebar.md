@@ -19,4 +19,3 @@
             - [9. Create dashboards with Metabase](/projects/project-3/part-9/README)
             - [10. Why using ECS & EC2 instead of EC2 only?](/projects/project-3/part-10/README)
             - [11. And the bill?](/projects/project-3/part-11/README)
-            - [12. BONUS: Add Docker images in ECR](/projects/project-3/part-12/README)

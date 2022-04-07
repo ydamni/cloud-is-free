@@ -27,7 +27,7 @@ How to deploy a database and containers on AWS? It's simple:
 
 The particularity of ECS is that the service needs either Fargate or EC2 in order to run its containers. Here it will be the **EC2 service that will be used because it is part of the Free Tier unlike Fargate**.
 
-Other services will be used (EFS, EBS & ECR) but will be detailed later in the project.
+Other services will be used (EFS, EBS) but will be detailed later in the project.
 
 Finally, it will be necessary to manage the access to the resources, so that:
 

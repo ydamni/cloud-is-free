@@ -8,7 +8,6 @@
 - RDS
 - EC2 & EBS
 - ECS
-- ECR
 - EFS
 
 #### Container
@@ -32,8 +31,6 @@
     -   1 GB of snapshot storage
 -	*ECS:*
     -   Used in EC2, so relies on EC2 billing.
--	*ECR:*
-    -   500 MB-month of Storage
 -	*EFS:*
     -   5 GB of storage
 
@@ -69,5 +66,3 @@ ___
 [10. Why using ECS & EC2 instead of EC2 only?](/projects/project-3/part-10/README.md)
 
 [11. And the bill?](/projects/project-3/part-11/README.md)
-
-[12. BONUS: Add Docker images in ECR](/projects/project-3/part-12/README.md)
