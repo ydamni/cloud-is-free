@@ -5,7 +5,7 @@
 
 For the more hesitant who do not want to follow this tutorial blindly and wish to verify that this project will not cost them more than the advertised price: you are right to ask!
 
-So I'm showing you, in my use case, my AWS bill over a week and a month of going live.
+So I'm showing you, in my use case, my AWS bill over a month of going live.
 But before, let's look at this:
 
 ![How many requests](images/how-many-requests.png ':size=800')
@@ -44,9 +44,9 @@ This means:
 - The dot **.** separates the integer part from the decimal part, ex: ½ = 0.5
 
 You now know how to read an AWS invoice without any problem.
-You can finally analyze the evolution of a bill from this project over a week and a month.
+You can finally analyze the evolution of a bill from this project over a month.
 
-### B.	One week invoice
+### B.	One month invoice
 
 
 #### S3:
