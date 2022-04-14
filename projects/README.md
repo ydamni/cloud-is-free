@@ -30,7 +30,7 @@ All the information about the project is available on its page.
 
 **Time to complete:** 2 hours
 
-**Budget:** Less than $20
+**Budget:** Less than $20 a year (less than $2 a month)
 
 #### [Start the project 1](../projects/project-1/README.md)
 
@@ -44,7 +44,7 @@ ___
 
 **Time to complete:** 5 hours
 
-**Budget:** Less than $1
+**Budget:** Less than $1 a month
 
 #### [Start the project 2](../projects/project-2/README.md)
 
