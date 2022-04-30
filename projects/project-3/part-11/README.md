@@ -1,12 +1,10 @@
 ## And the bill?
 
-:warning: `This part will be completed in the future once the project is invoiced over a week and then a month. For the moment, only step A. Decimal Separator will be available. Thank you for your patience.`
-
-> For those who have already completed other projects before, you can skip the intro and step *A. Decimal Separator*, and go directly to step *B. One week invoice*.
+> For those who have already completed other projects before, you can skip the intro and step *A. Decimal Separator*, and go directly to step *B. One month invoice*.
 
 For the more hesitant who do not want to follow this tutorial blindly and wish to verify that this project will not cost them more than the advertised price: you are right to ask!
 
-So I'm showing you, in my use case, my AWS bill over a week and a month of going live.
+So I'm showing you, in my use case, my AWS bill over a month of going live.
 But before, let's look at this:
 
 ![How many requests](images/how-many-requests.png ':size=800')
@@ -45,6 +43,56 @@ This means:
 - The dot **.** separates the integer part from the decimal part, ex: ½ = 0.5
 
 You now know how to read an AWS invoice without any problem.
-You can finally analyze the evolution of a bill from this project over a week and a month.
+You can finally analyze the evolution of a bill from this project over a month.
+
+
+### B.	One month invoice
+
+
+#### EC2:
+
+![Elastic Compute Cloud](images/elastic-compute-cloud.png ':size=800')
+
+**What is observed:**
+- Usage (Free Tier:  750 hours per month of t2.micro instance usage):
+    - 672 Hours = 89.6% of the Free Tier used.
+- EBS (Free Tier: 30 GB of General Purpose (SSD) or Magnetic):
+    - 27.585 GB provisioned = 92% of the Free Tier used.
+
+
+#### ECS:
+
+![Elastic Container Service](images/elastic-container-service.png ':size=800')
+
+**What is observed:**
+- Free Tier: used on EC2, so relies on EC2 billing.
+
+
+#### EFS:
+
+![Elastic File System](images/elastic-file-system.png ':size=800')
+
+**What is observed:**
+- Storage (Free Tier: 5 GB of Storage):
+    - 0.002 GB of Storage = 0.04% of the Free Tier used.
+
+
+#### RDS:
+
+![Relational Database Service](images/relational-database-service.png ':size=800')
+
+**What is observed:**
+- Usage (750 Hours per month of db.t2.micro & db.t3.micro database usage):
+    - 655 + 17 Hours => 672 Hours in total =  89.6% of the Free Tier used.
+- Storage (20 GB of General Purpose (SSD) database storage):
+    - 18.636 GB provisioned = 93% of the Free Tier used.
+
+
+...
+
+In one month, the Free Tier was used at a **maximum of 93%**. No cost have been incurred.
+
+#### In one month, the Free Tier threshold will never be exceeded. The *Database and Containers* project is completely free of charge.
+
 
 ### [Finish the project](../)
