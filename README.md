@@ -1,5 +1,7 @@
 # Homepage
 
+> If you are on the GitHub repository: [Go to the website](https://cloudisfree.com)
+
 This site aims to help those wishing to set up practical projects through an interactive and detailed documentation, and this while taking advantage of the Free Tier from Cloud platforms.
 
 **No more fear of receiving a hefty bill:** follow these steps properly and deploy your first Cloud projects for cheap.
