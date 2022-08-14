@@ -15,6 +15,10 @@ and other projects that will come in the future.
 
 The projects are currently deployed on AWS, but will be deployed on other Cloud platforms in the future.
 
+Here is an overview of the technologies used for each project:
+
+![Technologies Used](images/technologies-used.svg ':size=550')
+
 Ready to start your first project? Then head to the Projects section.
 
 ### [Go to Projects](projects/README.md)
